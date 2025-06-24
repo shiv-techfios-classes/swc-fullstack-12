@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML For Websites</title>
+    <style>
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+
+        }
+
+        h3 {
+            color: red;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .floating {
+            animation: float 2s ease-in-out infinite;
+        }
+
+        @keyframes transition-X {
+
+            0% {
+                transform: translateX(0px);
+            }
+
+            50% {
+
+                transform: translateX(30px);
+            }
+
+            100% {
+
+                transform: translateX(0px);
+            }
+        }
+
+        .moving {
+            animation: transition-X 2s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        tr {
+            animation: fadeIn 2.4s ease-in;
+        }
+
+        @keyframes flash {
+            0% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: orange;
+            }
+
+            100% {
+                background-color: yellow;
+            }
+        }
+
+        tr:hover {
+            animation: flash 1s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="moving" style="color: blue; align-items: right;">Blue Color heading</h1>
+
+    <h2 style="color:green">Green Color Heading</h2>
+
+    <h3 class="floating">Red color heading</h3>
+
+    <h2>Floating Images</h2>
+    <p><strong>Float the image to the right:</strong></p>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <p style="margin: 0%;">
+            <img src="smiley.jpeg" alt="Smiley face" class="floating" style="float: right;width: 140px;height:140px;">
+            A paragraph with a floating image. A paragraph with a floating image. A paragraph
+            with a floating image.
+        </p>
+    </div>
+
+    <p><strong>Float the image to the left:</strong></p>
+    <p style="margin:0%">
+        <img src="smiley.jpeg" alt="Smiley face" style="float:left;width:142px;height:142px;">
+        <br /><br />
+        A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+    </p>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>30</td>
+            <td class="flash">alice@rediff.com</td>
+            <td>Alice is regular in class and good in coding.</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>25</td>
+            <td>bob@gmail.com</td>
+            <td class="flash">Bob is good at UI development</td>
+        </tr>
+        <tr>
+            <td>ruthy</td>
+            <td>25</td>
+            <td>ruthy@yahoo.com</td>
+            <td class="fish">Ruthy excels in Rest API development.</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

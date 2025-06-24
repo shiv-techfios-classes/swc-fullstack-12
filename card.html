@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation Card</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h2 {
+      margin: 0 0 10px;
+      font-size: 1.5em;
+    }
+
+    .card-content p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .card-content a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    .card-content a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+ <div class="card">
+    <img src="https://via.placeholder.com/300x200" alt="Card image">
+    <div class="card-content">
+      <h2>Card Title</h2>
+      <p title="I am a tooltip">This is a simple description inside the card. You can add anything here.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+    
+</body>
+</html>
